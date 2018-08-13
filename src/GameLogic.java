@@ -63,7 +63,7 @@ public class GameLogic {
 
     private void finishGame() {
         System.out.println("Вы закончили игру!");
-        if (numOfGuesses < 10) {
+        if (numOfGuesses <= 18) {
             System.out.printf("Ваше колличесвто попыток- %d. Поздравляем вас!", numOfGuesses);
         }
         else {

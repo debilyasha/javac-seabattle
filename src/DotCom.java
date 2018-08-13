@@ -36,7 +36,7 @@ public class DotCom {
 }
 
 class GameHelper {
-    private static final String alphabet = "абвгдеё";
+    private static final String ALPHABET = "абвгдеё";
     private int gridLength = 7;
     private int gridSize = 49;
     private int[] grid = new int[gridSize];
@@ -99,7 +99,7 @@ class GameHelper {
             grid[coords[x]] = 1;
             row = (int) (coords[x] / gridLength);
             column = coords[x] % gridLength;
-            temp = String.valueOf(alphabet.charAt(column));
+            temp = String.valueOf(ALPHABET.charAt(column));
             alphaCells.add(temp.concat(Integer.toString(row)));
             x++;
         }
