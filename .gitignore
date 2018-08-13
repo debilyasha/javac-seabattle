@@ -1,7 +1,5 @@
 # папки
 out/
-out/artifacts
-src/META-INF
 
 # файлы
 *.iml
