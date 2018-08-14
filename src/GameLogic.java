@@ -28,7 +28,8 @@ public class GameLogic {
         dotComList.add(com3);
 
         System.out.printf("У вас есть три сайта: %s, %s и %s\n", com1.getName(), com2.getName(), com3.getName());
-        System.out.print("Ваша задача- их ддоснуть!\nУдачи!\n");
+        System.out.print("Ваша задача- их ддоснуть!\n");
+        System.out.println("Постарайтесь сделать это как можно быстрее!\nУдачи!");
 
         for (DotCom site : dotComList) {
             ArrayList<String> newLoc = helper.placeDotCom(3);
@@ -66,8 +67,10 @@ public class GameLogic {
         if (numOfGuesses <= 18) {
             System.out.printf("Ваше колличесвто попыток- %d. Поздравляем вас!", numOfGuesses);
         }
-        else {
+        else if (numOfGuesses >= 35) {
             System.out.printf("Ваше колличесвто попыток- %d... Даже моя бабушка бы быстрее эту игру закончила.", numOfGuesses);
+        } else {
+            System.out.printf("Ваше количество поптыток- %d... Моя улитка быстрее бы закончила...", numOfGuesses);
         }
     }
 }
